@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;700&display=swap');
+
+:root {
+    --padding: 10px;
+    --font-size: 1.8em;
+    --Ubuntufont: 'Phudu', cursive;
+    --violet: #901da6;
+    --blue: #6bfcff;
+    --orange: #feb601;
+}
+
 body {
     max-width: 1096px;
     margin: 0;
@@ -47,3 +58,60 @@ main {
 footer {
     height: 15vh;
 }
+
+/* Menú de selección */
+
+.menu {
+   /* padding: 25x; */
+   width: 100%;
+   margin: 25px 0; 
+   
+   display: flex;
+   justify-content: space-between;
+   /* gap: 5.5em; */
+}
+
+.menu > .store {
+    color: white;
+    font-size: var(--font-size);
+    width: 35vw;
+    padding: var(--padding);
+    font-family: var(--Ubuntufont);
+    font-weight: 400;
+    background-color: var(--orange);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.menu > #selection {
+    width: 50vw;
+    padding: var(--padding);
+    font-size: var(--font-size);
+    font-family: var(--Ubuntufont);
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: var(--violet);
+    border: none;
+    border: 1px solid var(--violet);
+    color: white;
+}
+
+.menu > #btn {
+    width: 15vw;
+    padding: var(--padding);
+    font-size: var(--font-size);
+    font-family: var(--Ubuntufont);
+    font-weight: 600;
+    background-color: var(--blue);
+    border: none;
+    border: 8px solid var(--blue);
+    border-radius: 5px;
+}
+
+.menu > #btn:hover{
+    border-bottom: 8px solid var(--violet);
+    color: var(--violet);
+    transition: all 1s;
+}
+
+/* Section */
