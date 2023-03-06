@@ -133,6 +133,23 @@ footer {
     border: 4px solid var(--violet);
 }
 
+/* Animacion */
+
+.box-model:nth-child(odd):hover {
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 3px 3px 25px 2px #feb601;
+    -moz-box-shadow: 3px 3px 25px 2px #feb601;
+    box-shadow: 3px 3px 25px 2px #feb601;
+}
+.box-model:nth-child(even):hover {
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 7.5px 2px 23.5px 9px #901da6;
+    -moz-box-shadow: 7.5px 2px 23.5px 9px #901da6;
+    box-shadow: 7.5px 2px 23.5px 9px #901da6;
+}
+
 .box-model > img {
     width: 200px;
     height: 200px;
