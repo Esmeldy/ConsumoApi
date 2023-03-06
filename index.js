@@ -2,6 +2,8 @@ const content =  document.querySelector('#content');
 const select =  document.getElementById('selection');
 const boton =  document.getElementById('btn');
 
+//agregando evento click
+//al pulsar se captura el valor seleccionado y se llama a la funcion con dicho valor
 boton.onclick = () => {
     GetGames(select.value)
 };
@@ -15,7 +17,14 @@ boton.onclick = () => {
 //{storeID: '25', storeName: 'Epic Games Store', isActive: 1, images: {…}}
 //{storeID: '27', storeName: 'Gamesplanet', isActive: 1, images: {…}}
 
+
+/**
+ * Funcion que recibe una id de la tienda y hace la peticion a la api para esa tienda.
+ * En este caso se utiliza Fetch
+ * @param {idStore}
+ */
 function GetGames(idStore) { 
+    //en este caso se borra lo anterior en cada petición.
     content.innerHTML = "";
     fetch('https://www.cheapshark.com/api/1.0/deals?storeID='+idStore+'&upperPrice=15')
     .then(Response => Response.json())
