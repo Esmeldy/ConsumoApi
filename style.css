@@ -28,7 +28,7 @@ header {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: contain;
-    
+    min-height: 50vh;
 }
 
 header h1 {
