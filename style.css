@@ -4,6 +4,7 @@
     --padding: 10px;
     --font-size: 1.8em;
     --TitleGame: 2.8em;
+    --TitleFooter: 2.2em;
     --Ubuntufont: 'Phudu', cursive;
     --violet: #901da6;
     --blue: #6bfcff;
@@ -108,12 +109,16 @@ footer {
     border: 8px solid var(--blue);
     border-radius: 5px;
 }
-
+/* Animacion */
 .menu > #btn:hover{
     border-bottom: 8px solid var(--violet);
     color: var(--violet);
     transition: all 1s;
 }
+
+/* Fin Animacion */
+
+
 /* Content -> Box model */
 
 .box-model {
@@ -141,6 +146,7 @@ footer {
     -webkit-box-shadow: 3px 3px 25px 2px #feb601;
     -moz-box-shadow: 3px 3px 25px 2px #feb601;
     box-shadow: 3px 3px 25px 2px #feb601;
+    
 }
 .box-model:nth-child(even):hover {
     transform: scale(1.02);
@@ -150,6 +156,7 @@ footer {
     box-shadow: 7.5px 2px 23.5px 9px #901da6;
 }
 
+/* fin Animacion */
 .box-model > img {
     width: 200px;
     height: 200px;
@@ -179,7 +186,24 @@ footer {
 .box-model > div >div p:last-child::after {
     content: " %";
 }
+/* Fin content -> Box-model */
 
 
+/* Fin Section */
 
-/* Section */
+/* Footer */
+footer {
+    width: 100%;
+    height: 15vh;
+    border-top: 5px solid var(--orange);
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: white;
+    font-family: var(--Ubuntufont);
+    font-size: var(--TitleFooter);
+}
+
+
+/* Fin Footer */
