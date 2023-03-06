@@ -27,7 +27,7 @@ header {
     background-image: url('./img/gamer.png');
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-size: cover;
+    background-size: contain;
     
 }
 
