@@ -22,10 +22,10 @@ body {
 /* Cabecera */
 header {
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     background-image: url('./img/gamer.png');
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-clip: border-box;
     background-size: cover;
     
 }
