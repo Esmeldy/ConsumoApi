@@ -30,7 +30,7 @@ header {
     background-size: contain;
 }
 #content {
-    min-height: 50vh;
+    min-height: 40vh;
 }
 header h1 {
     color: white;
