@@ -32,7 +32,7 @@ function GetGames(idStore) {
        
             // Creando el hijo div con clase box-model
             let div = document.createElement('div');
-            div.classList.add('.box-model');
+            div.classList.add('box-model');
             content.appendChild(div);
             
             // creando la etiqueta img 
